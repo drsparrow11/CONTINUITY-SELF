@@ -172,6 +172,17 @@ h1, h2, h3 { margin: 0; letter-spacing: 0; }
   font-size: clamp(1.45rem, 3vw, 2.65rem);
   line-height: 1.08;
 }
+.why-points {
+  display: grid;
+  gap: 10px;
+  margin-top: 24px;
+}
+.why-points span {
+  border-left: 2px solid rgba(240, 168, 75, 0.72);
+  padding: 8px 0 8px 12px;
+  color: var(--soft);
+  font: 700 0.82rem "JetBrains Mono", monospace;
+}
 .why-shell blockquote {
   margin: 0;
   display: grid;
@@ -308,7 +319,26 @@ audio { width: 100%; height: 42px; accent-color: var(--gold); }
 .post-card.final { border-color: rgba(255, 217, 154, 0.56); }
 .post-meta { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; margin-bottom: 14px; color: var(--muted); font: 700 0.72rem "JetBrains Mono", monospace; text-transform: uppercase; }
 .post-card h2 { font: 700 clamp(1.25rem, 2.2vw, 1.8rem) "JetBrains Mono", monospace; line-height: 1.16; }
-.post-card pre { overflow: auto; margin: 16px 0 0; border: 1px solid rgba(240, 168, 75, 0.18); border-radius: 6px; padding: 14px; color: var(--soft); background: rgba(0, 0, 0, 0.25); font: 0.76rem/1.55 "JetBrains Mono", monospace; white-space: pre-wrap; }
+.post-card pre { overflow: auto; margin: 0; font: 0.76rem/1.55 "JetBrains Mono", monospace; white-space: pre-wrap; }
+.lumen-note {
+  margin-top: 16px;
+  border: 1px solid rgba(240, 168, 75, 0.22);
+  border-radius: 6px;
+  padding: 13px 14px;
+  background:
+    linear-gradient(135deg, rgba(240, 168, 75, 0.08), rgba(125, 183, 199, 0.04)),
+    rgba(0, 0, 0, 0.25);
+}
+.lumen-note strong {
+  display: block;
+  margin-bottom: 9px;
+  color: var(--gold);
+  font: 800 0.68rem "JetBrains Mono", monospace;
+  letter-spacing: 0;
+}
+.lumen-note pre {
+  color: var(--soft);
+}
 .post-card-media img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border: 1px solid var(--line); border-radius: 6px; margin-bottom: 16px; }
 
 .lightbox { position: fixed; inset: 0; z-index: 40; display: none; place-items: center; padding: 34px; background: rgba(3, 2, 1, 0.92); }
